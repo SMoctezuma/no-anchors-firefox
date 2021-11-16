@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 2,
+    "name": "No Anchors",
+    "version": "1.0",
+  
+    "description": "Removes anchor tags with _target properties. Useful for websites with popup ads and such.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www6.f2movies.to/*"],//"*://*.mozilla.org/*"],
+        "js": ["no-anchors.js"]
+      }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "no-anchors@lovast.com"
+        }
+      }
+      
+  
+}
+  
